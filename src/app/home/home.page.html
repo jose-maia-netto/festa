@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Qtd adultos:</ion-label>
+    <ion-input type="number" [(ngModel)]="qtdAdultos" placeholder="Ex: 5"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Qtd crianças:</ion-label>
+    <ion-input type="number" [(ngModel)]="qtdCriancas" placeholder="Ex: 10"></ion-input>
+  </ion-item>
+  
+
+
+  <ion-button (click)="calcular()">Calcular</ion-button>
+  <h3>A quantidade necessárias de insumos é: </h3>
+  <h1>{{totalBolo.toFixed(0)}} Salgadinhos</h1>
+  <h1>{{totalSalgadinhos.toFixed(0)}} Gramas de Bolo</h1>
+  <h1>{{totalRefrigerante.toFixed(0)}} ml de Refrigerante</h1>
+</ion-content>
